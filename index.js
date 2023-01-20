@@ -44,25 +44,27 @@ const questions = [
 
 { 
     type: "input", 
-    message: "Insert any details on testing", 
+    message: "Insert details on testing", 
     name: "Tests", 
 }, 
 
 { 
     type: "input", 
-    message: "Invite Questions", 
+    message: "Invite others to ask questions", 
     name: "Questions", 
 }, 
 ];
 
 // function to write README file
 function writeToFile(fileName, data) {
-}
+    return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+}; 
 
 // function to initialize program
-function init() {
-
-}
+function init(){
+    inquirer.prompt(questions).then((promptResponse) => {
+    writeToFile("README.md", generateMarkdown({...promptResponse}));
+}); };
 
 // function call to initialize program
 init();
