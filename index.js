@@ -51,10 +51,8 @@ const questions = [
 { 
     type: "input", 
     message: "Invite Questions", 
-    name: "TestQuestionss", 
+    name: "Questions", 
 }, 
-
-
 ];
 
 // function to write README file
