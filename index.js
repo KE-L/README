@@ -35,7 +35,7 @@ const questions = [
 { 
     type: "input", 
     message: "Insert details on any applicable licenses", 
-    name: "Usage", 
+    name: "License", 
 }, 
 { 
     type: "input", 
