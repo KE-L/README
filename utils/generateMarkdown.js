@@ -1,7 +1,6 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title};
-  
   ### ${data.description};
   <br/>
   # ${data.tableOfContent};
@@ -21,9 +20,7 @@ function generateMarkdown(data) {
   * Microsoft Bing API
   
   ### ${data.usage};
-  
   <br/>
-
   ### ${data.license};
   
   ### ${data.contributors};
