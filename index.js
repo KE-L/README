@@ -1,3 +1,4 @@
+// Establish necessities required for Node 
 const fs = require("fs");
 const path = require('path');
 const inquirer = require("inquirer");
@@ -51,16 +52,18 @@ const questions = [
 { 
     type: "input", 
     message: "Invite others to ask questions", 
-    name: "Questions", 
+    name: "Qs", 
 }, 
 ];
 
 // function to write README file
+// Write to file using fs to create file & generates a new directory 
 function writeToFile(fileName, data) {
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }; 
 
 // function to initialize program
+// inquirer question prompt - response to write to file & generate markdown response 
 function init(){
     inquirer.prompt(questions).then((promptResponse) => {
     writeToFile("README.md", generateMarkdown({...promptResponse}));
@@ -68,3 +71,5 @@ function init(){
 
 // function call to initialize program
 init();
+
+
