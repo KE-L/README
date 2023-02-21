@@ -1,16 +1,14 @@
-// function to generate markdown for README
-function generateMarkdown(data) {
-  return `# ${data.title};
-  ### ${data.description};
+# title of project;
+  ### desctiption example;
   <br/>
-  # ${data.Tableofcontent};
+  # contents;
    * 
    * 
    * 
    * 
    * 
    
-  ### ${data.Installation};
+  ### guide note;
   * HTML
   * CSS
   * JavaScript
@@ -19,11 +17,11 @@ function generateMarkdown(data) {
   * Spotify API
   * Microsoft Bing API
   
-  ### ${data.Usage};
+  ### how to use;
   <br/>
-  ### ${data.License};
+  ### licence ;
   
-  ### ${data.Contributors};
+  ### details test;
 
   * Free API Call Limits & perimeters
   * Agreeing on a concept & integrating multiple APIs
@@ -31,13 +29,9 @@ function generateMarkdown(data) {
   * Using agile development methodologies to work collaboratively
   * Collectively developing & improving functionality
   
-  ### ${data.Tests};
+  ### test test;
   
-  ### ${data.Qs};
+  ### questions;
 
   ---
   ### Licensed under the MIT license
-`;
-}
-
-module.exports = generateMarkdown;
