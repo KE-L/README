@@ -1,42 +1,33 @@
 // function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title};
+  return `
+  # ${data.title};
   ### ${data.description};
   <br/>
+
+  # Contents
   # ${data.Tableofcontent};
-   * 
-   * 
-   * 
-   * 
-   * 
    
+   
+  # Installation insturctions below:
   ### ${data.Installation};
-  * HTML
-  * CSS
-  * JavaScript
-  * BootStrap
-  * jQuery
-  * Spotify API
-  * Microsoft Bing API
-  
+ 
+  # How to use this application:
   ### ${data.Usage};
   <br/>
+# Licence used:
   ### ${data.License};
-  
+  #Contributor list
   ### ${data.Contributors};
 
-  * Free API Call Limits & perimeters
-  * Agreeing on a concept & integrating multiple APIs
-  * Identifying viable APIs with relevant functionality
-  * Using agile development methodologies to work collaboratively
-  * Collectively developing & improving functionality
-  
+
+  # How to test the application:
   ### ${data.Tests};
-  
+  # Questions below:
   ### ${data.Qs};
 
   ---
-  ### Licensed under the MIT license
+  
 `;
 }
 
